@@ -1,0 +1,95 @@
+
+@font-face {
+    font-family: CryptoCrash;
+    src: url("CryptoCrash-K7jWe.ttf");
+}
+html , body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color:white;
+    overflow-x: hidden;
+    margin:0;
+    align-items:center ;
+    justify-content: space-around;
+    font-family: "Squada One", serif;
+    flex-direction: column;
+}
+#myspace{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 0;
+  }
+  
+header{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    z-index: 1;
+}
+h1{
+    font-family: "CryptoCrash";
+    font-size: 10vw;
+    color: white;
+    margin: 0;
+}
+header>p{
+    margin-top: -1.7vw;
+}
+p {
+    font-size: 1.2vw;
+}
+span{
+    font-size: 2vw;
+}
+blockquote {
+    font-size: 1.5vw;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+}
+.button {
+width: 140px;
+z-index: 1;
+height: 45px;
+margin-top: 5vh;
+font-family: 'Roboto', sans-serif;
+font-size: 1vw;
+text-transform: uppercase;
+letter-spacing: 2.5px;
+font-weight: 900;
+color: #000;
+background-color: #fff;
+border: none;
+border-radius: 45px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease 0s;
+cursor: pointer;
+outline: none;
+}
+
+.button:hover {
+background-color: #b6b6b6;
+box-shadow: 0px 15px 20px rgba(153, 153, 153, 0.4);
+color: #fff;
+transform: translateY(-7px);
+}
+
+.game{
+    width: 100%;
+}
+
+.crypted{
+    display: inline-block;
+    width: 1vw;
+    height: 3vh;
+    /* border: 1px solid white; */
+    margin:0 0.2vw ;
+    background-color: rgb(53, 37, 50);
+    cursor: pointer;
+}
