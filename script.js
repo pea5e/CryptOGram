@@ -12,7 +12,7 @@ document.body.onload = () => {
     const max_size = 4;
     const min_size = 0;
 
-    const total_nodes = 1000;
+    const total_nodes = 5000;
     const node_base_color = "ffffff";
 
 
