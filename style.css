@@ -82,13 +82,15 @@ transform: translateY(-7px);
 
 .game{
     width: 100%;
+    /* line-height: 15vh; */
 }
 
 .crypted{
     /* display: inline-block; */
     display: inline-grid;
-    width: 1.2vw;
+    width: 1.5vw;
     height: 4vh;
+    /* align-content: center; */
     /* border: 1px solid white; */
     margin:0 0.08vw ;
     background-color: rgb(53, 37, 50);
@@ -133,4 +135,9 @@ small{
 
 .timer{
     margin-bottom:5vh;
+}
+
+div{
+    display: block;
+    height: 2vw;
 }

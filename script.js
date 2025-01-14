@@ -12,7 +12,7 @@ document.body.onload = () => {
     const max_size = 4;
     const min_size = 0;
 
-    const total_nodes = 5000;
+    const total_nodes = 5000
     const node_base_color = "ffffff";
 
 
@@ -167,6 +167,11 @@ document.body.onload = () => {
                     }
                     else
                         game.innerHTML += quote.charAt(index)
+                    
+                    if ((index+1)%80==0)
+                    {
+                      game.innerHTML += "<div></div>"
+                    }
                 }
 
                 Array.from(document.getElementsByTagName("strong")).forEach(e=>e.addEventListener("click",selectInd))
