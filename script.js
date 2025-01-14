@@ -181,18 +181,24 @@ document.body.onload = () => {
                   
                   var key = event.key.toLowerCase()
                   var selectInd = document.getElementsByClassName("selectedInd")
-                  console.log(replacment)
-                  console.log(answers)
                   if(selectInd.length>0 && key.length==1 && key.charCodeAt(0)>=97 && key.charCodeAt(0)<=97+25 )
                   {
                     Array.from(selectInd).forEach(e=>e.innerHTML=`<small>${key}</small>`)
                     answers[selectInd[0].classList.item(1).split('-')[1]] = key.charCodeAt(0)-97
+                    console.log(replacment)
+                    console.log(answers)
                     if(!answers.includes(undefined))
                     {
-                      answers.forEach((v,e)=>{
-                        if(v != replacment[e])
+                      // answers.forEach((v,e)=>{
+                      //   if(v != replacment[e])
+                      //     return;
+                      // });
+                      for(let e=0;e<answers.length;e++)
+                      {
+                        if(answers[e] != replacment[e])
                           return;
-                      });
+                      }
+                      console.log("correct")
                       replacment = []
                       answers = [] 
                       setTimeout(()=>{
