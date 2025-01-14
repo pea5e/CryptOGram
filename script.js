@@ -131,7 +131,7 @@ document.body.onload = () => {
         button.style.visibility = "hidden"
         quoteBlock.style.display = "none"
         fetch("https://salimking.pythonanywhere.com/api/quotes/random").then(r=>r.json()).then(r=>{
-                console.log(r[0])
+                // console.log(r[0])
                 author = r[0].a
                 quote = r[0].q.toLowerCase();
                 html = r[0].h
@@ -185,8 +185,8 @@ document.body.onload = () => {
                   {
                     Array.from(selectInd).forEach(e=>e.innerHTML=`<small>${key}</small>`)
                     answers[selectInd[0].classList.item(1).split('-')[1]] = key.charCodeAt(0)-97
-                    console.log(replacment)
-                    console.log(answers)
+                    // console.log(replacment)
+                    // console.log(answers)
                     if(!answers.includes(undefined))
                     {
                       // answers.forEach((v,e)=>{
@@ -198,7 +198,6 @@ document.body.onload = () => {
                         if(answers[e] != replacment[e])
                           return;
                       }
-                      console.log("correct")
                       replacment = []
                       answers = [] 
                       setTimeout(()=>{
