@@ -130,8 +130,8 @@ document.body.onload = () => {
         // console.log(replacment)
         button.style.visibility = "hidden"
         quoteBlock.style.display = "none"
-        // fetch("https://salimking.pythonanywhere.com/api/quotes/random").then(r=>r.json()).then(r=>{
-        fetch("https://zenquotes.io/api/random").then(r=>r.json()).then(r=>{
+        fetch("https://wordle.pythonanywhere.com/quote").then(r=>r.json()).then(r=>{
+        // fetch("https://zenquotes.io/api/random").then(r=>r.json()).then(r=>{
                 // console.log(r[0])
                 author = r[0].a
                 quote = r[0].q.toLowerCase();
